@@ -1,0 +1,16 @@
+<div class="container">
+
+    <div class="d-flex justify-content-center">
+        <h2>Archived Files</h2>
+    </div>
+    <div class="card bg-dark border">
+        <div class="card-header">
+            <input class="input-sm header-search-input border" autocomplete="on" #searchBox type="text" id="search-box" placeholder="Search:" (input)="search(searchBox.value)"/>
+        </div>
+        <ul *ngFor="let file of uploadedFiles$ | async" class="list-group list-group-flush">
+            <li class="list-group-item">
+                <app-certificate-details [uploadedFile]='file'></app-certificate-details>
+            </li>
+        </ul>
+    </div>
+</div>

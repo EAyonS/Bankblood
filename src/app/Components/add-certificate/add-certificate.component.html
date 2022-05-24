@@ -1,0 +1,26 @@
+<div class="d-flex justify-content-center parent">
+
+    <div class="d-flex d-inline-flex justify-content-center align-content-center">
+        
+        <label>
+            <input type="file" name="docfile" id="docfile" class="p-2 align-self-center text-nowrap text-truncate " (change)="selectFile($event)">
+        </label>
+        
+        <button class="p-2 btn" [disabled]="!selectedFiles" (click)="upload()">
+            <div class="d-flex flex-row">
+                <div *ngIf="currentUpload" class="p-1">
+                    <span class="spinner-grow spinner-grow-sm"></span>        
+                </div>
+                <div class="p-1">
+                    Upload File
+                </div>
+            </div>
+        </button>
+    </div>
+    
+    <div *ngIf="currentUpload" class="progress mt-2">
+        <div class="progress-bar progress-bar-info" role="progressbar" attr.aria-valuenow="{{percentage}}" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: percentage + '%'}">
+            {{percentage}}%
+        </div>
+    </div>
+</div>

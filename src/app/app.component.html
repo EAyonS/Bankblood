@@ -1,0 +1,131 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">BankBlood</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" routerLink="/inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" [routerLink]="'/donde'">¿Donde donar?</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" [routerLink]="'/como'">¿Cómo donar?</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" [routerLink]="'/register'">Registrarse</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" [routerLink]="'/login'">Iniciar Sesión</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" [routerLink]="'/pacient'">Pacientes</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" [routerLink]="'/donators'">Donadores</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" [routerLink]="'/profile'">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" [routerLink]="'/stadistic'">Estadística</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" [routerLink]="'/regdonant'">Registrar Donante</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" [routerLink]="'/notifications'">Notificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" href="#" [routerLink]="'/certificatelist'">Certifications</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--
+<footer class="text-center text-lg-start bg-dark text-white">
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <div class="me-5 d-none d-lg-block">
+      <span>Buscanos en nuestras redes sociales:</span>
+    </div>
+
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Bankblood
+          </h6>
+          <p>
+            Bankblood es un proyecto del bachillerato creado para resolver
+            ese problema de buscar donadores de sangre e informar a la gente
+            sobre la donación de sangre, además de poder ayudar a más gente
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contacto desarrollador
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Tulla #1225, Col. Paraisos del Colli, Zapopan, Jalisco</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            emyayonsan2002@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> (33)-1195-9708</p>
+          <p><i class="fas fa-print me-3"></i> (33)-1654-3354</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="http://localhost:4200/">www.Bankblood.com</a>
+  </div>
+</footer> -->
+
+<router-outlet></router-outlet>
